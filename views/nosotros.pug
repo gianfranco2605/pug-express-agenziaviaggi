@@ -1,5 +1,34 @@
-h1 hola 
+extends ./layout/index
 
-p= viajes
-//- or 
-//- p #{viajes}
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5 
+
+                img(src="img/nosotros.jpg", alt="nosotros" class="img-fluid")
+            .col-md-7 
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu sapien tempor, vestibulum mauris vel, sollicitudin orci. Sed at commodo nulla. Integer sit amet porttitor quam. Donec placerat tellus vitae diam tristique, id faucibus urna ultrices. Ut tempus, orci vestibulum aliquam porttitor, ante risus rutrum nulla, id tristique felis libero sit amet purus.
+
+                p Donec sollicitudin ultrices orci nec auctor. Fusce et dui fermentum, luctus sapien et, dignissim leo. Etiam dictum lacus vitae mattis vestibulum.
+
+                p Aenean neque tellus, lacinia vel iaculis eget, dictum ac dolor. Etiam lacinia, tellus in sagittis auctor, metus nibh commodo urna, eget efficitur odio sapien sed augue. Aenean lacus mauris, luctus quis aliquam vel, pellentesque et sapien. Quisque faucibus ligula viverra mi condimentum, et aliquam diam sodales. Ut laoreet fermentum mi et pretium. Fusce bibendum consequat dolor id ultrices. Sed rutrum diam at lectus sagittis egestas. In pulvinar velit vitae est consequat ultrices. Quisque fringilla sapien consectetur massa vestibulum, vitae molestie quam feugiat. Curabitur interdum hendrerit ullamcorper. Vivamus euismod justo eu molestie accumsan.
+
+
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4  
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Etiam lacinia, tellus in sagittis auctor, metus nibh commodo urna, eget efficitur odio sapien sed augue.
+
+                .col-md-4  
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Etiam lacinia, tellus in sagittis auctor, metus nibh commodo urna, eget efficitur odio sapien sed augue.   
+
+                .col-md-4  
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejore Precios 
+                    p Etiam lacinia, tellus in sagittis auctor, metus nibh commodo urna, eget efficitur odio sapien sed augue.     
