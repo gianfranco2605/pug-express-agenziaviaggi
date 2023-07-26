@@ -26,6 +26,9 @@ app.use((req, res, next) => {
     return next();
 });
 
+//Agregar body parser para leer datos del formulario
+app.use(express.urlencoded({extends: true}));
+
 //define public folder
 app.use(express.static('public'));
 
